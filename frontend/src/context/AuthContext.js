@@ -16,7 +16,7 @@ export const AuthProvider = ({ children }) => {
   });
 
   const navigate = useNavigate();
-  const API = axios.create({ baseURL: 'http://localhost:5000/api' });
+  const API = axios.create({ baseURL: 'https://edu-track-snowy.vercel.app/api' });
 
   const updateState = useCallback((newState) => {
     setState((prev) => ({ ...prev, ...newState }));

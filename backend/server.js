@@ -7,7 +7,7 @@ dotenv.config();
 connectDB();
 
 const app = express();
-app.use(cors());
+app.use(cors('https://edu-track-odhk.vercel.app/login'));
 app.use(express.json());
 
 app.use('/api/auth', require('./routes/auth'));

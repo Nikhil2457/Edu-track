@@ -1,0 +1,70 @@
+# Node.js and npm
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn.lock
+package-lock.json
+frontend/node_modules/
+backend/node_modules/
+
+# Environment Variables
+.env
+backend/.env
+frontend/.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Frontend Build Artifacts (Create React App or Vite)
+frontend/build/
+frontend/dist/
+frontend/.cache/
+frontend/public/build/
+
+# Backend Build Artifacts
+backend/dist/
+backend/build/
+
+# Vercel
+.vercel
+.vercel/output/
+vercel.json.bak
+
+# Editor and IDE Files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+.DS_Store
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Testing and Coverage
+coverage/
+*.lcov
+
+# Temporary Files
+*.tmp
+*.temp
+*.bak
+
+# OS-specific Files
+Thumbs.db
+desktop.ini
+
+# MongoDB Atlas or Database Configs (if any)
+*.key
+*.pem
+*.cert
+
+# Miscellaneous
+*.pid
+*.seed
+*.pid.lock

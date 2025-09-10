@@ -1,0 +1,28 @@
+body {
+  background-color: #f8f9fa;
+  font-family: 'Roboto', sans-serif;
+}
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+.alert {
+  margin-top: 10px;
+}
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+.table th, .table td {
+  vertical-align: middle;
+}
+.pagination {
+  justify-content: center;
+  margin-top: 20px;
+}

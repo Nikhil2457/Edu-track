@@ -19,7 +19,7 @@ exports.signup = async (req, res) => {
     user.resetTokenExpiry = Date.now() + 3600000; // 1 hour
     await user.save();
 
-    const verifyUrl = `http://localhost:3000/verify/${verifyToken}`;
+    const verifyUrl = `https://edu-track-odhk.vercel.app/verify/${verifyToken}`;
     await sendEmail(email, 'Verify Email', `<p>Click <a href="${verifyUrl}">here</a> to verify.</p>`);
 
     res.status(201).json({ msg: 'User registered. Verify email to login.' });
@@ -77,7 +77,7 @@ exports.forgotPassword = async (req, res) => {
     user.resetTokenExpiry = Date.now() + 3600000;
     await user.save();
 
-    const resetUrl = `http://localhost:3000/reset/${resetToken}`;
+    const resetUrl = `https://edu-track-odhk.vercel.app/reset/${resetToken}`;
     await sendEmail(email, 'Reset Password', `<p>Click <a href="${resetUrl}">here</a> to reset password.</p>`);
     res.json({ msg: 'Reset link sent' });
   } catch (err) {
